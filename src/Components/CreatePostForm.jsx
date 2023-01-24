@@ -33,22 +33,22 @@ const CreatePostForm = () =>{
         <form onSubmit={handleSubmit}>
             <label>
                 Name:
-                <input type="text" name="name" value=" " onChange={handleChange} />
+                <input type="text" name="name" value="" onChange={handleChange} />
             </label>
             <label><label>
                
                 Picture:
-                <input type="image" name="picture" value=" " onChange={handleChange} />
+                <input type="image" name="picture" value="" onChange={handleChange} />
             </label>
             <br />
             <br />
                 Description:
-                <input type="text" name="description" value=" " onChange={handleChange} />
+                <input type="text" name="description" value="" onChange={handleChange} />
             </label>
             <label>
                 <br />
                 Time:
-                <input type="time" name="time" value=" " onChange={handleChange} />
+                <input type="time" name="time" value="" onChange={handleChange} />
           
            </label>
             <br />
@@ -59,4 +59,6 @@ const CreatePostForm = () =>{
 };
 export default CreatePostForm
 
-
+// Create a form that has inputs able to post name, pic,description and time 
+// must have state 
+//Post to the database
