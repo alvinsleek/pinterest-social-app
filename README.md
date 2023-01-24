@@ -1,71 +1,43 @@
-# Getting Started with Create React App
+### Social Networking Site
+This project is a social networking site built with React, JavaScript, and JSON Server. It allows users to create, edit, like, and delete posts, as well as comment on other users' posts. The site supports the posting of text, images, or both, and the initial design for the site was created in Figma.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
+To run this project locally, you will need to have Node.js and npm (Node Package Manager) installed on your machine.
 
-## Available Scripts
+Clone the repository
+git clone https://github.com/username/social-network.git
 
-In the project directory, you can run:
+Install the necessary dependencies
+npm install
 
-### `npm start`
+Start the JSON Server
+npx json-server --watch db.json
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Start the application
+npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application will now be running on http://localhost:3000
 
-### `npm test`
+# Features
+1.Users can create, edit, and delete posts.
+2.Users can like and comment on other users' posts.
+3.Posts can contain text, images, or both.
+4..The site has a responsive design, and the layout was created using Figma.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Built With
+React - JavaScript library for building user interfaces
+JavaScript - Programming language
+JSON Server - Used for mock APIs
+Figma - Used for creating the initial design
 
-### `npm run build`
+# Authors
+Paul Omondi
+Alvin 
+Kenneth
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# pinterest-social-app
+# Acknowledgments
+Inspiration for this project came from popular social networking sites such as Facebook and Twitter.
+# Notes 
+1.This is a basic social networking site, for production-ready version many more features and security needs to be implemented
+2.You can use different API or database for the real-world implementation.
+3.JSON Server is used for this project for the ease of use and understanding, but it is not recommended for production use.
