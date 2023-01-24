@@ -18,18 +18,27 @@ This project is a social networking site built with React, JavaScript, and JSON 
 
 # Built With
 React - JavaScript library for building user interfaces
+
 JavaScript - Programming language
+
 JSON Server - Used for mock APIs
+
 Figma - Used for creating the initial design
 
 # Authors
 Paul Omondi
+
 Alvin Mithamo
+
 Kenneth Mburu
+
 
 # Acknowledgments
 Inspiration for this project came from popular social networking sites such as Facebook and Twitter.
 # Notes 
 1.This is a basic social networking site, for production-ready version many more features and security needs to be implemented
+
 2.You can use different API or database for the real-world implementation.
+
 3.JSON Server is used for this project for the ease of use and understanding, but it is not recommended for production use.
+
