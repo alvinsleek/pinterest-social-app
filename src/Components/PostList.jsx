@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import PostCard from "./PostCard";
 import SearchBox from "./SearchBox";
 
-// pass props 
-// map postcard 
-// connect searchbox- filter 
-// declare search state here and pass to SearchBox as props
-function PostList () {
+function PostList({ postData, setPostData }) {
+  const [search, setSearch] = useState([]);
 
+  const postPageList = postData.map((post) => (
 
-    return (
-        <>
-         <SearchBox/>
-        <PostCard />
+ <PostCard key={post.id} post={post} setPostData={setPostData} />
+    
+ ));
+
+  return (
+    <>
+     <SearchBox search={search} setSearch={setSearch} />
+    
        
-        </>
-    )
-};
-export default PostList;
+     
+      <div className="">
+        <div className=" card-group mx-2 my-2" >
+        {postPageList}
+        </div>
+        </div>
+        
+    </>
+  );
+}
 
+export default PostList;

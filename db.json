@@ -2,7 +2,7 @@
     "Posts": [ {
      "id": 1,
      "name": "Omosh",
-     "image": "https://images.unsplash.com/photo-1660342028605-fa224bea4565?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+     "image": "https://images.unsplash.com/photo-1674500056691-a167e1ea4f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
      "description": "Kutesa kutesa",
      "created_at": "2022-01-01T00:00:00.000Z"
      },
@@ -16,20 +16,20 @@
     {
     "id": 3,
     "name": "Ken",
-    "image": "https://images.unsplash.com/photo-1625223181444-128aab274266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "image":"https://images.unsplash.com/photo-1625223181444-128aab274266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "description": "gang gang gang",
     "created_at": "2022-01-01T00:00:00.000Z"
     },
     {
     "id": 4,
     "name": "Howard",
-    "image": "Oluwa over everything",
-    "description": "https://images.unsplash.com/photo-1674231680941-cfc0f2d8fa83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+    "image": "https://images.unsplash.com/photo-1674505613923-98085d3712fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "description": "Coding my way to my first million",
     "created_at": "2022-01-01T00:00:00.000Z"
     },
     {
     "id": 5,
-    "name": "Howard",
+    "name": "sophia",
     "image": "https://images.unsplash.com/photo-1673906003762-9a5f529bfcbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "description": "leo ni kutesa",
     "created_at": "2022-01-01T00:00:00.000Z"
@@ -37,14 +37,14 @@
 
     {
     "id": 6,
-    "name": "Howard",
+    "name": "Evelyn",
     "image": "https://images.unsplash.com/photo-1671515618316-caa41f73c134?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "description": "Niokotweeeee",
     "created_at": "2022-01-01T00:00:00.000Z"
     },
     {
     "id": 7,
-    "name": "Howard",
+    "name": "Randy",
     "image": "https://images.unsplash.com/photo-1674515625118-a7d9eb5c167a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
     "description": "Rich Gang",
     "created_at": "2022-01-01T00:00:00.000Z"
@@ -58,14 +58,14 @@
     },
     {
     "id": 9,
-    "name": "Howard",
+    "name": "Keith",
     "image": "https://images.unsplash.com/photo-1612412008219-c5540c884708?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fEpwZzZLaWRsLUhrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "description": "An apple a day...",
     "created_at": "2022-01-01T00:00:00.000Z"
     },
     {
     "id": 10,
-    "name": "Howard",
+    "name": "Kuria",
     "image": "https://hwmiia.fra1.digitaloceanspaces.com/wp-content/uploads/2015/11/06130023/SolarNow-600x300.jpg",
     "description": "We are back!",
     "created_at": "2022-01-01T00:00:00.000Z"
