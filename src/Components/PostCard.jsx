@@ -1,12 +1,16 @@
 import React from 'react'
-import CommentList from './CommentList';
+import Comment from './Comment';
+
+// create of the display card 
+// Delete from the server 
+// FORM FOR COMMENTS - POST TO THE DB - COMMENT COMPONENT-FETCH THE COMMENT AND SHOWCASE BELOW POSTCARD
 function PostCard() {
 
 
   return (
     
     <>
-    <CommentList />
+    <Comment />
     </>
   )
 };
