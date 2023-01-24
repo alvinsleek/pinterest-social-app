@@ -32,8 +32,8 @@ Figma - Used for creating the initial design
 
 # Authors
 Paul Omondi
-Alvin 
-Kenneth
+Alvin Mithamo
+Kenneth Mburu
 
 # Acknowledgments
 Inspiration for this project came from popular social networking sites such as Facebook and Twitter.
