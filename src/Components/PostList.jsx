@@ -7,7 +7,7 @@ function PostList({ postData, setPostData }) {
   const [filteredData, setFilteredData] = useState(postData);
 
   useEffect(() => {
-    setFilteredData(postData.filter(post => search === "" || post.name.toLowerCase().includes(search.toLowerCase())));
+    setFilteredData(postData.filter(post => !post.name || search === "" || post.name.toLowerCase().includes(search.toLowerCase())));
   }, [search, postData]);
 
   return (
