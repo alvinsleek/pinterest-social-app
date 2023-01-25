@@ -43,21 +43,24 @@ const CreatePostForm = ({setPostData}) => {
   }
 
   return (
-    <form className="mt-3 mx-2 col-sm-6 col-md-4 col-" onSubmit={handleSubmit}>
+    <form className="mt-3 mx-2" onSubmit={handleSubmit}>
+      <div style={{display:'flex',flexDirection:'row'}}>
       <input
         type="text"
         placeholder="whats on your mind?"
         name="description"
         onChange={handleChange}
-        style={{ border: 'none' }}
+        style={{ border: 'none',flex:1}}
       />
       <br />
-      <input type="url" placeholder="image url" name="image" onChange={handleChange} />
+      <input type="url" placeholder="image url" name="image" onChange={handleChange} style={{border:'none',flex:1}} />
       <br />
-      <input type="text" placeholder="Your Name" name="name" onChange={handleChange} />
+      <input type="text" placeholder="Your Name" name="name" onChange={handleChange} style={{border:'none',flex:1}}/>
       <br />
-      <input type="time" placeholder="posting time" name="created_at" onChange={handleChange} />
-      <button type="submit">Submit</button>
+      <input type="time" placeholder="posting time" name="created_at" onChange={handleChange} style={{border:'none',flex:1}}/>
+                 
+      <button type="submit" style={{padding:'10px 20px'}}>Submit</button>
+      </div>
     </form>
   );
 };
