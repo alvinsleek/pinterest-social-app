@@ -8,8 +8,9 @@ function App() {
   return (
     <>
     <Navbar />
-    <HomePage />
     <CreatePostForm />
+    <HomePage />
+   
     </>
   );
 }
