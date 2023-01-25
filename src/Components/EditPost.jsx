@@ -38,23 +38,35 @@ function EditPost({setPostData}) {
     <div>
       {isEditing ? (
         <>
+        <br /> <br />
           <input
             type="text"
             name="name"
             onChange={handleInputChange}
           />
+          <br />
           <input
             type="url"
             name="image"
             onChange={handleInputChange}
           />
+          <br />
           <input
             type="text"
             name="description"
             onChange={handleInputChange}
           />
+          <br />
+          <input
+            type="text"
+            name="description"
+            onChange={handleInputChange}
+          />
+          <br />
+
           
           <button onClick={handleSaveClick}>Save</button>
+          <br />
         </>
       ) : (
         <button style={{width:'60px', height:'40px'}}  className="btn btn-dark text-white mx-3" onClick={handleEditClick}>Edit</button>
