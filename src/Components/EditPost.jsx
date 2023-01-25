@@ -57,7 +57,7 @@ function EditPost({setPostData}) {
           <button onClick={handleSaveClick}>Save</button>
         </>
       ) : (
-        <button   className="btn btn-dark text-white mx-3" onClick={handleEditClick}>Edit</button>
+        <button style={{width:'60px', height:'40px'}}  className="btn btn-dark text-white mx-3" onClick={handleEditClick}>Edit</button>
       )}
     </div>
   )

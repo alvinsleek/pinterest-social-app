@@ -26,13 +26,13 @@ function PostCard({ post }) {
             <div>
             
             </div>
-            <i onClick={handleClick}  className="fa-sharp fa-solid fa-heart mx-3" style={{width:'50px'}}>
+            <button onClick={handleClick}  className="fa-sharp fa-solid fa-heart mx-3" style={{width:'60px', height:'40px'}}>
                 {likes} {likes === 1 ? '' : ''}
-                </i>
+                </button>
                 <EditPost/>
             <Comment />
                
-               <a href="#" className="btn btn-dark text-white mx-3">Remove</a>
+               <a style={{width:'60px', height:'40px'}} href="#" className="btn btn-dark text-white mx-3">X</a>
                
             </div>
           </div >
