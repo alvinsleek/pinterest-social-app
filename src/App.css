@@ -42,5 +42,7 @@
 }
 
 @media (max-width: 768px) {
-  
+  .post-form{
+    width: 200px;
+  }
 }

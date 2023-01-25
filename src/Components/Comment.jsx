@@ -4,7 +4,9 @@ import React from 'react'
 
 function Comment() {
   return (
-    <div>Comment</div>
+    <div>
+      <i style={{fontsize:'50px'}} class="fa-solid fa-comment"></i>
+    </div>
   )
 };
 

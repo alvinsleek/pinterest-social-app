@@ -43,7 +43,7 @@ const CreatePostForm = ({setPostData}) => {
   }
 
   return (
-    <form className="mt-3 mx-2 col-sm-6 col-md-4 col-lg-11 post-form" onSubmit={handleSubmit} >
+    <form className="mt-3 mx-2  post-form" onSubmit={handleSubmit} >
       <div style={{display:'flex',flexDirection:'row'}}>
       <input
         type="text"
