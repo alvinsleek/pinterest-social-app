@@ -148,6 +148,34 @@
       "description": "dawa ya baridi",
       "created_at": "11:29",
       "id": 21
+    },
+    {
+      "name": "LIZ",
+      "image": "https://images.unsplash.com/photo-1674553049029-b45c79cafb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "dawa ya baridi",
+      "created_at": "11:48",
+      "id": 22
+    },
+    {
+      "name": "LIZ",
+      "image": "https://images.unsplash.com/photo-1674553049029-b45c79cafb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "dawa ya baridi",
+      "created_at": "11:48",
+      "id": 23
+    },
+    {
+      "name": "LIZ",
+      "image": "https://images.unsplash.com/photo-1674553049029-b45c79cafb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "dawa ya baridi",
+      "created_at": "11:48",
+      "id": 24
+    },
+    {
+      "name": "LIZ",
+      "image": "https://images.unsplash.com/photo-1674553049029-b45c79cafb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "dawa ya baridi",
+      "created_at": "11:48",
+      "id": 25
     }
   ],
   "comments": [

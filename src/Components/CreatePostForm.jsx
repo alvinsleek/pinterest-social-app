@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const CreatePostForm = () => {
+const CreatePostForm = ({setPostData}) => {
   const [formData, setFormData] = useState({
     name: '',
     image: '',
     description: '',
     created_at: '',
   });
-  const [data, setData] = useState([]);
+
 
   useEffect(() => {
     fetchData();
@@ -20,6 +20,7 @@ const CreatePostForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.target.reset()
     fetch('http://localhost:3000/Posts', {
       method: 'POST',
       body: JSON.stringify(formData),
@@ -36,13 +37,13 @@ const CreatePostForm = () => {
     fetch('http://localhost:3000/Posts')
       .then((res) => res.json())
       .then((data) => {
-        setData(data);
+        setPostData(data);
       })
       .catch((error) => console.error(error));
   }
 
   return (
-    <form className="mt-3 mx-2" onSubmit={handleSubmit}>
+    <form className="mt-3 mx-2 col-sm-6 col-md-4 col-" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="whats on your mind?"

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import PostList from "./PostList";
+import CreatePostForm from "./CreatePostForm";
 
 function HomePage ( ) {
 //fetch data from db.json
@@ -18,6 +19,7 @@ fetch( 'http://localhost:3000/Posts')
 
     return (
     <>
+    <CreatePostForm setPostData={setPostData}/>
     <PostList postData ={postData}  setPostData={setPostData}/>
     </>
     )
