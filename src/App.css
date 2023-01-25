@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.post-form{
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  
+}

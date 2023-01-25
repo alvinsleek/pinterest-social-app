@@ -19,8 +19,10 @@ fetch( 'http://localhost:3000/Posts')
 
     return (
     <>
+    <div className="overflow-hidden">
     <CreatePostForm setPostData={setPostData}/>
     <PostList postData ={postData}  setPostData={setPostData}/>
+    </div>
     </>
     )
 };

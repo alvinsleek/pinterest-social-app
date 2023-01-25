@@ -43,7 +43,7 @@ const CreatePostForm = ({setPostData}) => {
   }
 
   return (
-    <form className="mt-3 mx-2" onSubmit={handleSubmit}>
+    <form className="mt-3 mx-2 col-sm-6 col-md-4 col-lg-11 post-form" onSubmit={handleSubmit} >
       <div style={{display:'flex',flexDirection:'row'}}>
       <input
         type="text"
@@ -53,13 +53,13 @@ const CreatePostForm = ({setPostData}) => {
         style={{ border: 'none',flex:1}}
       />
       <br />
-      <input type="url" placeholder="image url" name="image" onChange={handleChange} style={{border:'none',flex:1}} />
+      <input type="url" placeholder="image url" name="image" onChange={handleChange} style={{border:'none'}} />
       <br />
-      <input type="text" placeholder="Your Name" name="name" onChange={handleChange} style={{border:'none',flex:1}}/>
+      <input type="text" placeholder="Your Name" name="name" onChange={handleChange} style={{border:'none'}}/>
       <br />
-      <input type="time" placeholder="posting time" name="created_at" onChange={handleChange} style={{border:'none',flex:1}}/>
+      <input type="time" placeholder="posting time" name="created_at" onChange={handleChange} style={{border:'none'}}/>
                  
-      <button type="submit" style={{padding:'10px 20px'}}>Submit</button>
+      <button className='bg-white rounded' type="submit" style={{padding:'10px',border:'none'}}>POST</button>
       </div>
     </form>
   );
