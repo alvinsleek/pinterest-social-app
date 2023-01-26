@@ -71,20 +71,6 @@
       "created_at": "2022-01-01T00:00:00.000Z"
     },
     {
-      "name": "",
-      "pic": "",
-      "description": "",
-      "time": "",
-      "id": 11
-    },
-    {
-      "name": "",
-      "pic": "",
-      "description": "",
-      "time": "",
-      "id": 12
-    },
-    {
       "name": "jamna",
       "pic": "",
       "description": "travelling",
@@ -108,34 +94,6 @@
       "id": 15
     },
     {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 16
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 17
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 18
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 19
-    },
-    {
       "name": "omosh",
       "image": "https://images.unsplash.com/photo-1674566394357-44c0ded098e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "description": "Alcohol",
@@ -150,78 +108,10 @@
       "id": 21
     },
     {
-      "name": "sd",
-      "image": "http://www.wwe.com",
-      "description": "d",
-      "created_at": "01:04",
-      "id": 22
-    },
-    {
-      "name": "sd",
-      "image": "http://www.wwe.com",
-      "description": "d",
-      "created_at": "01:04",
-      "id": 23
-    },
-    {
-      "name": "sd",
-      "image": "http://www.wwe.com",
-      "description": "d",
-      "created_at": "01:04",
+      "name": "Debora",
+      "image": "https://images.unsplash.com/photo-1674694585581-9e924f12673c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "siz",
       "id": 24
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 25
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 26
-    },
-    {
-      "name": "",
-      "image": "",
-      "description": "",
-      "created_at": "",
-      "id": 27
-    },
-    {
-      "name": "adhis",
-      "image": "https://images.unsplash.com/photo-1674458791378-a8b86baf21ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "description": "Paypal from a friend",
-      "created_at": "12:34",
-      "id": 28
-    },
-    {
-      "name": "Icecream",
-      "image": "https://images.unsplash.com/photo-1674458791378-a8b86baf21ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "description": "Paypal from a friend",
-      "created_at": "12:34",
-      "id": 29
-    },
-    {
-      "id": 30
-    },
-    {
-      "id": 31
-    },
-    {
-      "id": 32
-    },
-    {
-      "id": 33
-    },
-    {
-      "id": 34
-    },
-    {
-      "id": 35
     }
   ],
   "comments": [
@@ -272,12 +162,12 @@
     {
       "id": 1,
       "postId": 1,
-      "likeCount": 512
+      "likeCount": 514
     },
     {
       "id": 2,
       "postId": 2,
-      "likeCount": 87
+      "likeCount": 167
     },
     {
       "id": 3,
@@ -287,7 +177,7 @@
     {
       "id": 4,
       "postId": 4,
-      "likeCount": 48
+      "likeCount": 65
     },
     {
       "id": 5,
@@ -297,7 +187,7 @@
     {
       "id": 6,
       "postId": 6,
-      "likeCount": 2
+      "likeCount": 16
     },
     {
       "id": 7,
@@ -307,12 +197,12 @@
     {
       "id": 8,
       "postId": 8,
-      "likeCount": 10
+      "likeCount": 52
     },
     {
       "id": 9,
       "postId": 9,
-      "likeCount": 6
+      "likeCount": 34
     },
     {
       "id": 10,
@@ -372,7 +262,7 @@
     {
       "id": 21,
       "postId": 21,
-      "likeCount": 85
+      "likeCount": 107
     }
   ]
 }

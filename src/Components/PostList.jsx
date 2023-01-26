@@ -12,6 +12,11 @@ function PostList({ postData, setPostData }) {
     setFilteredData(postData.filter(post => !post.name || search === "" || post.name.toLowerCase().includes(search.toLowerCase())));
   }, [search, postData]);
 
+
+  const handleDeleteFunc = (id) => {
+
+    setFilteredData(postData.filter((post) => post.id !== id))
+  }
   return (
     <>
     
@@ -22,7 +27,7 @@ function PostList({ postData, setPostData }) {
         <h2 className="bg-dark text-white">Your Feed</h2>
         <div className=" row mx-2 my-2">
           {filteredData.map((post) => (
-            <PostCard key={post.id} post={post} setPostData={setPostData}  />
+            <PostCard key={post.id} post={post} setPostData={setPostData} onDelete={handleDeleteFunc} />
           ))}
         </div>
       </div>

@@ -12,13 +12,13 @@ function EditPost({setPostData}) {
         const handleSaveClick = () => {
             setIsEditing(false);
             fetch('http://localhost:3000/Posts', {
-              method: 'POST',
+              method: 'PATCH',
               body: JSON.stringify(updatedData),
               headers: { 'Content-Type': 'application/json' },
             })
               .then((response) => response.json())
               .then((data) => {
-                console.log('Success:', data);
+                setPostData(data);
               })
               .catch((error) => {
                 console.error('Error:', error);
@@ -40,29 +40,27 @@ function EditPost({setPostData}) {
         <>
         <br /> <br />
           <input
+          placeholder='user name'
             type="text"
             name="name"
             onChange={handleInputChange}
           />
           <br />
           <input
+          placeholder='image url'
             type="url"
             name="image"
             onChange={handleInputChange}
           />
           <br />
           <input
+          placeholder='edit description'
             type="text"
             name="description"
             onChange={handleInputChange}
           />
           <br />
-          <input
-            type="text"
-            name="description"
-            onChange={handleInputChange}
-          />
-          <br />
+         
 
           
           <button onClick={handleSaveClick}>Save</button>
