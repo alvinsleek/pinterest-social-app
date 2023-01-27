@@ -112,6 +112,13 @@
       "image": "https://images.unsplash.com/photo-1674694585581-9e924f12673c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "description": "siz",
       "id": 24
+    },
+    {
+      "name": "howard",
+      "image": "https://images.unsplash.com/photo-1674695670808-0480f62cc7d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "my girl is beautiful yall",
+      "created_at": "22:16",
+      "id": 26
     }
   ],
   "comments": [
@@ -119,19 +126,16 @@
       "id": 1,
       "name": "Omosh",
       "content": "Great post!"
-      
     },
     {
       "id": 2,
       "name": "Alvin",
       "content": "Great post!"
-      
     },
     {
       "id": 3,
       "name": "ken",
       "content": "Great post!"
-      
     },
     {
       "id": 4,
@@ -160,12 +164,12 @@
     {
       "id": 1,
       "postId": 1,
-      "likeCount": 514
+      "likeCount": 561
     },
     {
       "id": 2,
       "postId": 2,
-      "likeCount": 167
+      "likeCount": 182
     },
     {
       "id": 3,
@@ -175,7 +179,7 @@
     {
       "id": 4,
       "postId": 4,
-      "likeCount": 65
+      "likeCount": 76
     },
     {
       "id": 5,
@@ -185,12 +189,12 @@
     {
       "id": 6,
       "postId": 6,
-      "likeCount": 16
+      "likeCount": 90
     },
     {
       "id": 7,
       "postId": 7,
-      "likeCount": 131
+      "likeCount": 147
     },
     {
       "id": 8,
@@ -260,7 +264,7 @@
     {
       "id": 21,
       "postId": 21,
-      "likeCount": 107
+      "likeCount": 113
     }
   ]
 }

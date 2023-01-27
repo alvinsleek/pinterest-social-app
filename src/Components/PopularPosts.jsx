@@ -1,27 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function PopularPosts({ postData }) {
-  const [likeCount, setLikeCount] = useState();
+  const [data, setData] = useState();
   const [page, setPage] = useState(1);
   const postsPerPage = 3;
 
   useEffect(() => {
-    fetch(`http://localhost:3000/likes/${postData.id}`)
+    fetch(`http://localhost:3000/Posts`)
       .then((res) => res.json())
-      .then(({ likeCount }) => setLikeCount(likeCount));
-      
-  }, [postData.id]);
+      .then((data) => setData(data));
+  }, [postData]);
 
-  const sortedPosts = postData.sort((a, b) => b.likeCount - a.likeCount);
+  //const sortedPosts = postData.sort((a, b) => b.likeCount - a.likeCount);
 
   const indexOfLastPost = page * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = (data || []).slice(indexOfFirstPost, indexOfLastPost);
 
   const postCards = currentPosts.map((post) => (
-    <div key={post.id} className="display-card-container  col-sm-6 col-md-4  my-2 mx-1.8 ">
-      <div className="card  " style={{ boxShadow: '8px 8px 4px 0px grey',borderRadius:'20px' }}>
-        <img src={post.image}  className="card-img-top img-fluid img-responsive" alt="..." style={{height:'60vh'}} />
+    <div
+      key={post.id}
+      className="display-card-container col-sm-6 col-md-4 my-2 mx-1.8"
+    >
+      <div
+        className="card"
+        style={{ boxShadow: "8px 8px 4px 0px grey", borderRadius: "20px" }}
+      >
+        <img
+          src={post.image}
+          className="card-img-top img-fluid img-responsive"
+          alt="..."
+          style={{ height: "60vh" }}
+        />
         <div className="card-body">
           <h5 className="card-title">{post.name}</h5>
           <p className="card-text">{post.description}</p>
@@ -32,11 +42,8 @@ function PopularPosts({ postData }) {
 
   return (
     <>
-    <h1 className='bg-dark text-white mt-2'>Popular Posts</h1>
-    <div className='row'>
-      {postCards}
-     
-    </div>
+      <h1 className="bg-dark text-white mt-2">Popular Posts</h1>
+      <div className="row">{postCards}</div>
     </>
   );
 }
