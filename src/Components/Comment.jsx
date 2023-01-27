@@ -1,10 +1,15 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 
-//comment prompt form 
+//comment prompt form
 
 function Comment({ setPostData }) {
   const [isEditing, setIsEditing] = useState(false);
-  const [updatedData, setUpdatedData] = useState({});
+  const [updatedData, setUpdatedData] = useState({
+    name:'',
+    content:''
+  });
+
+  
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -12,8 +17,8 @@ function Comment({ setPostData }) {
 
   const handleSaveClick = () => {
     setIsEditing(false);
-    fetch("http://localhost:3000/Posts", {
-      method: "PATCH",
+    fetch("http://localhost:3000/comments", {
+      method: "POST",
       body: JSON.stringify(updatedData),
       headers: { "Content-Type": "application/json" },
     })
@@ -39,31 +44,32 @@ function Comment({ setPostData }) {
         <>
           <br /> <br />
           <input
+            className="rounded"
             placeholder="user"
             type="text"
             name="name"
             onChange={handleInputChange}
-            style={{width:'90%'}}
-            
+            style={{ width: "100px" }}
           />
           <br />
           <textarea
-          className='mt-2'
+            className="mt-1 rounded"
             placeholder="Comment"
             type="text"
             name="content"
             onChange={handleInputChange}
-            style={{width:'90%'}}
+            style={{ width: "100px", height: "30px" }}
           />
           <br />
-        
           <br />
-          <button onClick={handleSaveClick}>Save</button>
+          <button className="mt-1" onClick={handleSaveClick}>
+            Save
+          </button>
           <br />
         </>
       ) : (
         <button
-          style={{ width: "100px", height: "40px" }}
+          style={{ width: "100px", height: "30px", padding: "2px" }}
           className="btn btn-dark text-white mx-3"
           onClick={handleEditClick}
         >

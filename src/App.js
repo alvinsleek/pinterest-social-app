@@ -5,6 +5,7 @@ import HomePage from "./Components/HomePage";
 import { Routes, Route } from "react-router-dom";
 import PopularPosts from "./Components/PopularPosts";
 import PostList from "./Components/PostList";
+import CreatePostForm from "./Components/CreatePostForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route path="popularposts" element={<PopularPosts />} />
           <Route path="postlist" element={<PostList />} />
+          <Route path="createpostform" element={<CreatePostForm />} />
         </Routes>
       </div>
     </>

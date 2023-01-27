@@ -23,8 +23,8 @@ function PopularPosts({ postData }) {
       className="display-card-container col-sm-6 col-md-4 my-2 mx-1.8"
     >
       <div
-        className="card"
-        style={{ boxShadow: "8px 8px 4px 0px grey", borderRadius: "20px" }}
+        className="card bg-dark text-white"
+        style={{ borderRadius: "20px" }}
       >
         <img
           src={post.image}
@@ -32,8 +32,8 @@ function PopularPosts({ postData }) {
           alt="..."
           style={{ height: "60vh" }}
         />
-        <div className="card-body">
-          <h5 className="card-title">{post.name}</h5>
+        <div className="card-body card-group">
+          <h5 className="card-title">{post.name}:</h5>
           <p className="card-text">{post.description}</p>
         </div>
       </div>

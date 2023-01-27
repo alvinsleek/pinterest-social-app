@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PostList from "./PostList";
 import CreatePostForm from "./CreatePostForm";
+import Footerr from "./Footerr";
 
 function HomePage() {
   //fetch data from db.json
@@ -19,6 +20,7 @@ function HomePage() {
       <div className="overflow-hidden ">
         <CreatePostForm setPostData={setPostData} />
         <PostList postData={postData} setPostData={setPostData} />
+        <Footerr/>
       </div>
     </>
   );

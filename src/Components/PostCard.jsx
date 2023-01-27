@@ -2,8 +2,31 @@ import React, { useState, useEffect } from "react";
 import Comment from "./Comment";
 import EditPost from "./EditPost";
 
-const PostCard = ({ post, onDelete }) => {
+const PostCard = ({ post, onDelete, setPostData }) => {
   const [likeCount, setLikeCount] = useState();
+  const [viewingComments, setviewingComments] = useState(false);
+  const [comment, setComment] = useState([]);
+
+  
+
+  const handleViewClick = () => {
+    setviewingComments(true);
+
+    fetch('http://localhost:3000/comments')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(comment => {
+      console.log(comment.name);
+      console.log(comment.content);
+      setComment(data)
+    },[]);
+  })
+  .catch(error => console.error(error));
+
+  };
+  const handleSaveClick = () => {
+    setviewingComments(false);
+  };
 
   useEffect(() => {
     fetch(`http://localhost:3000/likes/${post.id}`)
@@ -49,7 +72,7 @@ const PostCard = ({ post, onDelete }) => {
 
   return (
     <div className="display-card-container col-sm-6 col-md-4  my-2 mx-1.8">
-      <div className="card" style={{ boxShadow: "8px 8px 4px 0px grey" }}>
+      <div className="card bg-dark text-white" style={{}}>
         <img
           src={post.image}
           style={{ height: "80vh" }}
@@ -57,31 +80,57 @@ const PostCard = ({ post, onDelete }) => {
           alt="..."
         />
         <div className="card-body">
-          <h5 className="card-title">{post.name}</h5>
-          <p className="card-text">{post.description}</p>
-          <div className="card card-group">
+          <div className="card-group">
+            <h5 className="card-title">{post.name}:</h5>
+            <p className="card-text">{post.description}</p>
+          </div>
+          <div
+            className="card bg-dark text-white"
+            style={{ display: "flex", flexDirection: "row" }}
+          >
             <button
-            
               onClick={() => handleClick(post.id)}
-              className="fa-sharp fa-solid fa-heart mx-3 col-3"
-              style={{ width: "66px", height: "40px" }}
+              className="fa-sharp fa-solid fa-heart mx-3 bg-danger rounded"
+              style={{ width: "66px", height: "30px" }}
             >
               {likeCount} {likeCount === 1 ? "Like" : ""}
             </button>
             <div className="col-3">
-            <EditPost post={post} />
+              <EditPost post={post} setPostData={setPostData} />
             </div>
             <div className="col-3 mx-3">
-            <Comment post={post} />
+              <Comment post={post} setPostData={setPostData} />
             </div>
             <a
               onClick={() => handleDelete(post.id)}
-              style={{ width: "60px", height: "40px" }}
-              href="#"
-              className="btn btn-dark text-white mx-3 col-3"
+              style={{ width: "20px", height: "30px", padding: "5px" }}
+              
+              className="btn btn-dark text-white mx-3 bg-danger"
             >
               X
             </a>
+          </div>
+          <div>
+            <div>
+              {viewingComments ? (
+                <>
+                  <br />
+                  <p>{comment.name} great post!</p>
+                  <p>{comment.content} must be nice</p>
+
+                  <button onClick={handleSaveClick}>Close</button>
+                  <br />
+                </>
+              ) : (
+                <button
+                  style={{ width: "150px", height: "30px", padding: "2px" }}
+                  className="btn btn-dark text-white mx-3 "
+                  onClick={handleViewClick}
+                >
+                  view comments
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

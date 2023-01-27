@@ -43,17 +43,18 @@ const CreatePostForm = ({setPostData}) => {
   }
 
   return (
+    <div className='bg-dark'>
     <form className="mt-3 mx-2  post-form" onSubmit={handleSubmit} >
-      <div style={{display:'flex',flexDirection:'row'}}>
+      <div style={{display:'flex',flexDirection:'row', border:'2px solid black'}}>
       <input
         type="text"
-        placeholder="whats on your mind?"
+        placeholder="Whats on your mind?"
         name="description"
         onChange={handleChange}
         style={{ border: 'none',flex:1}}
       />
       <br />
-      <input type="url" placeholder="image url" name="image" onChange={handleChange} style={{border:'none'}} />
+      <input type="url"  placeholder="image url" name="image" onChange={handleChange} style={{border:'none'}} />
       <br />
       <input type="text" placeholder="Your Name" name="name" onChange={handleChange} style={{border:'none'}}/>
       <br />
@@ -62,6 +63,7 @@ const CreatePostForm = ({setPostData}) => {
       <button className='bg-white rounded' type="submit" style={{padding:'10px',border:'none'}}>POST</button>
       </div>
     </form>
+    </div>
   );
 };
 
