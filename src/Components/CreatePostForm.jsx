@@ -42,59 +42,24 @@ const CreatePostForm = ({ setPostData }) => {
   };
 
   return (
-    <div className="col-sm-4 col-md-6 col-lg-12">
-    <div className="bg-dark">
-      <form className="mt-3 mx-2  post-form" onSubmit={handleSubmit}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            border: "2px solid black",
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Whats on your mind?"
-            name="description"
-            onChange={handleChange}
-            style={{ border: "none", flex: 1 }}
-          />
-          <br />
-          <input
-            type="url"
-            placeholder="image url"
-            name="image"
-            onChange={handleChange}
-            style={{ border: "none" }}
-          />
-          <br />
-          <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            onChange={handleChange}
-            style={{ border: "none" }}
-          />
-          <br />
-          <input
-            type="time"
-            placeholder="posting time"
-            name="created_at"
-            onChange={handleChange}
-            style={{ border: "none" }}
-          />
-
-          <button
-            className="bg-white rounded"
-            type="submit"
-            style={{ padding: "10px", border: "none" }}
-          >
-            POST
-          </button>
+    <div className="container-fluid">
+    <div className="row">
+      <div className="col-12 col-sm-6 col-md-12 col-lg-12">
+        <div className="bg-dark">
+          <form className="mt-3 mx-2 post-form" onSubmit={handleSubmit}>
+            <div style={{display: "flex", flexDirection: "row", border: "2px solid black", justifyContent:"space-between"}}>
+              <input type="text" placeholder="caption?" name="description" onChange={handleChange} className="form-control " />
+              <input type="url" placeholder="image url" name="image" onChange={handleChange} className="form-control"  style={{width:'130px'}}/>
+              <input type="text" placeholder="Name" name="name" onChange={handleChange} className="form-control" style={{width:'80px'}}/>
+              <input type="time" placeholder="time" name="created_at" onChange={handleChange} className="form-control" style={{width:'90px'}} />
+              <button className="btn btn-primary" type="submit" style={{width:'60px'}}>POST</button>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
-    </div>
+  </div>
+  
   );
 };
 

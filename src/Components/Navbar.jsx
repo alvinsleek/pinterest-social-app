@@ -8,6 +8,7 @@ function Navbar() {
         <div class=" bg-dark container-fluid">
           <a class="navbar-brand text-white fw-bolder">MAVIBU</a>
           <button
+          color="white"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
