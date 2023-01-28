@@ -1,35 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-function EditPost({ post }) {
+function EditPost({ post,onEdit }) {
   const [isEditing, setIsEditing] = useState(false);
   const [data, setData] = useState({});
+  const [postData, setPostData] = useState(post);
 
   const handleEditClick = () => {
     setIsEditing(true);
   };
 
-  const handleSaveClick = async () => {
+  const handleSaveClick = async (id) => {
     setIsEditing(false);
     try {
-      const response = await fetch(`http://localhost:3000/posts/${post.id}`, {
+      const response = await fetch(`http://localhost:3000/posts/${postData.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
+      }); 
+      if (!response.ok)
+      {
         throw new Error(response.statusText);
       }
-
       const json = await response.json();
-      console.log(json);
+      onEdit(postData.id) ;
     } catch (err) {
       console.error(err);
     }
-    
   };
+
+  useEffect(() => {
+    setData(postData);
+  }, [postData]);
 
   return (
     <div>
@@ -44,7 +47,6 @@ function EditPost({ post }) {
             onChange={(e) => setData({ ...data, description: e.target.value })}
             style={{ width: "200px", height: "30px" }}
           />
-
           <button onClick={handleSaveClick}>Save</button>
           <br />
         </>

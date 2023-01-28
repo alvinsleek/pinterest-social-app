@@ -28,8 +28,8 @@ function PostList({ postData, setPostData }) {
   };
 
   const handleEdit =() =>{
-
-    setPostData(postData)
+    window.location.reload();
+    
   }
 
   return (
