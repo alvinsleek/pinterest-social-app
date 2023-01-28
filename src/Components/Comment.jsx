@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-function Comment({post,setComment }) {
+function Comment({ post, setComment }) {
   const [isEditing, setIsEditing] = useState(false);
   const [updatedData, setUpdatedData] = useState({
     name: "",
-    content: ""
+    content: "",
   });
 
   const handleEditClick = () => {
@@ -13,24 +13,24 @@ function Comment({post,setComment }) {
 
   const handleSaveClick = () => {
     setIsEditing(false);
-    fetch("http://localhost:3000/comments", {
+    fetch("https://my-server-sibuor.herokuapp.com/comments", {
       method: "POST",
       body: JSON.stringify(updatedData),
-      headers: { "Content-Type": "application/json" }
+      headers: { "Content-Type": "application/json" },
     })
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         console.log(data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error:", error);
-      },[]);
+      }, []);
   };
 
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     setUpdatedData({
       ...updatedData,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function EditPost({ post,onEdit }) {
+function EditPost({ post, onEdit }) {
   const [isEditing, setIsEditing] = useState(false);
   const [data, setData] = useState({});
   const [postData, setPostData] = useState(post);
@@ -12,19 +12,21 @@ function EditPost({ post,onEdit }) {
   const handleSaveClick = async (id) => {
     setIsEditing(false);
     try {
-      const response = await fetch(`http://localhost:3000/posts/${postData.id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      }); 
-      if (!response.ok)
-      {
+      const response = await fetch(
+        `https://my-server-sibuor.herokuapp.com/Posts/${postData.id}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      if (!response.ok) {
         throw new Error(response.statusText);
       }
       const json = await response.json();
-      onEdit(postData.id) ;
+      onEdit(postData.id);
     } catch (err) {
       console.error(err);
     }
@@ -42,6 +44,7 @@ function EditPost({ post,onEdit }) {
           <textarea
             className="mt-2 rounded"
             placeholder="new caption"
+            required
             type="text"
             name="description"
             onChange={(e) => setData({ ...data, description: e.target.value })}

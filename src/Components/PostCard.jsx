@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import Comment from "./Comment";
 import EditPost from "./EditPost";
 
-const PostCard = ({ post, onDelete, setPostData,onEdit }) => {
+const PostCard = ({ post, onDelete, setPostData, onEdit }) => {
   const [likeCount, setLikeCount] = useState();
   const [viewingComments, setviewingComments] = useState(false);
   const [comment, setComment] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/comments/${post.id}`)
+    fetch(`https://my-server-sibuor.herokuapp.com/comments/${post.id}`)
       .then((r) => r.json())
       .then((data) => setComment(data));
   }, [post.id]);
@@ -16,7 +16,7 @@ const PostCard = ({ post, onDelete, setPostData,onEdit }) => {
   const handleViewClick = () => {
     setviewingComments(true);
 
-    fetch(`http://localhost:3000/comments/${post.id}`)
+    fetch(`https://my-server-sibuor.herokuapp.com/comments/${post.id}`)
       .then((response) => response.json())
       .then((data) => setComment(data))
       .catch((error) => console.error(error));
@@ -26,7 +26,7 @@ const PostCard = ({ post, onDelete, setPostData,onEdit }) => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3000/likes/${post.id}`)
+    fetch(`https://my-server-sibuor.herokuapp.com/likes/${post.id}`)
       .then((res) => res.json())
       .then(({ likeCount }) => setLikeCount(likeCount));
   }, [post.id]);
@@ -34,12 +34,12 @@ const PostCard = ({ post, onDelete, setPostData,onEdit }) => {
   const handleClick = async (postId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/likes/${postId}`
+        `https://my-server-sibuor.herokuapp.com/likes/${postId}`
       );
       const { likeCount } = await response.json();
       const updatedLikeCount = likeCount + 1;
       setLikeCount(updatedLikeCount);
-      await fetch(`http://localhost:3000/likes/${postId}`, {
+      await fetch(`https://my-server-sibuor.herokuapp.com/likes/${postId}`, {
         method: "PATCH",
         body: JSON.stringify({ likeCount: updatedLikeCount }),
         headers: { "Content-Type": "application/json" },

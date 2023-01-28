@@ -22,10 +22,7 @@ function PopularPosts({ postData }) {
       key={post.id}
       className="display-card-container col-sm-6 col-md-4 my-2 mx-1.8"
     >
-      <div
-        className="card bg-dark text-white"
-        style={{ borderRadius: "20px" }}
-      >
+      <div className="card bg-dark text-white" style={{ borderRadius: "20px" }}>
         <img
           src={post.image}
           className="card-img-top img-fluid img-responsive"

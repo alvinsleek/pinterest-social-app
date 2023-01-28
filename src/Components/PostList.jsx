@@ -20,17 +20,15 @@ function PostList({ postData, setPostData }) {
       )
     );
   }, [search, postData]);
-  
 
   const handleDeleteFunc = (id) => {
     setPostData((postData || []).filter((post) => post.id !== id));
     setFilteredData((postData || []).filter((post) => post.id !== id));
   };
 
-  const handleEdit =() =>{
+  const handleEdit = () => {
     window.location.reload();
-    
-  }
+  };
 
   return (
     <>
@@ -40,7 +38,13 @@ function PostList({ postData, setPostData }) {
         <h2 className="bg-dark text-white">Your Feed</h2>
         <div className="row mx-2 my-2">
           {(filteredData || []).map((post) => (
-            <PostCard key={post.id} post={post} onDelete={handleDeleteFunc} setPostData={setPostData} onEdit={handleEdit}/>
+            <PostCard
+              key={post.id}
+              post={post}
+              onDelete={handleDeleteFunc}
+              setPostData={setPostData}
+              onEdit={handleEdit}
+            />
           ))}
         </div>
       </div>

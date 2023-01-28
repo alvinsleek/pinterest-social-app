@@ -9,18 +9,15 @@ function SearchBox({ search, setSearch }) {
 
   return (
     <div>
-      
-      
       <input
         type="text"
         placeholder="Search Posts"
         value={search}
         onChange={handleSearch}
         className="mb-3 mx-2 mt-2 rounded  "
-        style={{width:'70%'}}
+        style={{ width: "70%" }}
       />
     </div>
-    
   );
 }
 

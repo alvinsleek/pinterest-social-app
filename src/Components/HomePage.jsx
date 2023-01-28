@@ -10,7 +10,7 @@ function HomePage() {
   const [postData, setPostData] = useState([]);
 
   useEffect(() => {
-    fetch(" http://localhost:3000/Posts")
+    fetch(" https://my-server-sibuor.herokuapp.com/Posts")
       .then((r) => r.json())
       .then((data) => setPostData(data));
   }, []);
@@ -20,7 +20,7 @@ function HomePage() {
       <div className="overflow-hidden ">
         <CreatePostForm setPostData={setPostData} />
         <PostList postData={postData} setPostData={setPostData} />
-        <Footerr/>
+        <Footerr />
       </div>
     </>
   );
