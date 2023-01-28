@@ -11,7 +11,7 @@ function EditPost() {
   const handleSaveClick = async () => {
     setIsEditing(false);
     try {
-      const response = await fetch('http://localhost:3000/Posts', {
+      const response = await fetch('https://my-server-sibuor.herokuapp.com/Posts', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

@@ -7,40 +7,43 @@ const PostCard = ({ post, onDelete, setPostData }) => {
   const [viewingComments, setviewingComments] = useState(false);
   const [comment, setComment] = useState([]);
 
-  
+
+
+  useEffect(()=>{
+    fetch(`http://localhost:3000/comments/${post.id}`)
+    .then(r=>r.json())
+    .then((data)=>setComment(data))
+
+  },[post.id])
 
   const handleViewClick = () => {
     setviewingComments(true);
 
-    fetch('http://localhost:3000/comments')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(comment => {
-      console.log(comment.name);
-      console.log(comment.content);
-      setComment(data)
-    },[]);
-  })
-  .catch(error => console.error(error));
-
+    fetch(`http://localhost:3000/comments/${post.id}`)
+      .then((response) => response.json())
+      .then((data) => setComment(data)
+      )
+      .catch((error) => console.error(error));
   };
   const handleSaveClick = () => {
     setviewingComments(false);
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3000/likes/${post.id}`)
+    fetch(`https://my-server-sibuor.herokuapp.com/likes/${post.id}`)
       .then((res) => res.json())
       .then(({ likeCount }) => setLikeCount(likeCount));
   }, [post.id]);
 
   const handleClick = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:3000/likes/${postId}`);
+      const response = await fetch(
+        `https://my-server-sibuor.herokuapp.com/likes/${postId}`
+      );
       const { likeCount } = await response.json();
       const updatedLikeCount = likeCount + 1;
       setLikeCount(updatedLikeCount);
-      await fetch(`http://localhost:3000/likes/${postId}`, {
+      await fetch(`https://my-server-sibuor.herokuapp.com/likes/${postId}`, {
         method: "PATCH",
         body: JSON.stringify({ likeCount: updatedLikeCount }),
         headers: { "Content-Type": "application/json" },
@@ -52,13 +55,16 @@ const PostCard = ({ post, onDelete, setPostData }) => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/Posts/${id}`, {
-        method: "DELETE",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `https://my-server-sibuor.herokuapp.com/Posts/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
       if (response.ok) {
         onDelete(id);
         alert("Post is deleted");
@@ -81,7 +87,7 @@ const PostCard = ({ post, onDelete, setPostData }) => {
         />
         <div className="card-body">
           <div className="card-group">
-            <h5 className="card-title">{post.name}:</h5>
+            <h4 className="card-title">{post.name}:</h4>
             <p className="card-text">{post.description}</p>
           </div>
           <div
@@ -104,7 +110,6 @@ const PostCard = ({ post, onDelete, setPostData }) => {
             <a
               onClick={() => handleDelete(post.id)}
               style={{ width: "20px", height: "30px", padding: "5px" }}
-              
               className="btn btn-dark text-white mx-3 bg-danger"
             >
               X
@@ -115,8 +120,14 @@ const PostCard = ({ post, onDelete, setPostData }) => {
               {viewingComments ? (
                 <>
                   <br />
-                  <p>{comment.name} great post!</p>
-                  <p>{comment.content} must be nice</p>
+                  
+                    <>
+                    <div className="card-group">
+                      <h5>{comment.name}:</h5>
+                      <p>{comment.content}</p>
+                      </div>
+                    </>
+                  
 
                   <button onClick={handleSaveClick}>Close</button>
                   <br />

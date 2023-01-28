@@ -111,11 +111,13 @@
   "comments": [
     {
       "id": 1,
+      "postId":1,
       "name": "Omosh",
       "content": "Great post!"
     },
     {
       "id": 2,
+      "postId":2,
       "name": "Alvin",
       "content": "Great post!"
     },
@@ -127,16 +129,19 @@
     },
     {
       "id": 4,
+      "postId":4,
       "name": "Howard",
       "content": "Great post!"
     },
     {
       "id": 5,
+      "postId":5,
       "name": "sophia",
       "content": "Great post!"
     },
     {
       "id": 6,
+      "postId":6,
       "name": "Randy",
       "content": "Great post!"
     },
@@ -148,22 +153,36 @@
     {
       "name": "PAULOMOSH",
       "content": "kmeokoepke",
-      "id": 8
+      "id": 8,
+      "postId":14
     },
     {
       "name": "",
       "content": "",
-      "id": 9
+      "id": 9,
+      "postId":20
     },
     {
       "name": "",
       "content": "",
-      "id": 10
+      "id": 10,
+      "postId":15
     },
     {
       "name": "PAULOMOSH",
       "content": "Love it!",
-      "id": 11
+      "id": 11,
+      "postId":21
+    },
+    {
+      "name": "",
+      "content": "",
+      "id": 12
+    },
+    {
+      "name": "",
+      "content": "",
+      "id": 13
     }
   ],
   "likes": [
@@ -200,12 +219,12 @@
     {
       "id": 7,
       "postId": 7,
-      "likeCount": 147
+      "likeCount": 149
     },
     {
       "id": 8,
       "postId": 8,
-      "likeCount": 63
+      "likeCount": 79
     },
     {
       "id": 9,

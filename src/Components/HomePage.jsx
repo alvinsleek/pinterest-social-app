@@ -10,7 +10,7 @@ function HomePage() {
   const [postData, setPostData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Posts")
+    fetch("https://my-server-sibuor.herokuapp.com/Posts")
       .then((r) => r.json())
       .then((data) => setPostData(data));
   }, []);

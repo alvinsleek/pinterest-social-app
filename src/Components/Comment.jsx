@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 
-//comment prompt form
-
-function Comment({ setPostData }) {
+function Comment({post }) {
   const [isEditing, setIsEditing] = useState(false);
   const [updatedData, setUpdatedData] = useState({
-    name:'',
-    content:''
+    name: "",
+    content: ""
   });
-
-  
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -17,24 +13,24 @@ function Comment({ setPostData }) {
 
   const handleSaveClick = () => {
     setIsEditing(false);
-    fetch("http://localhost:3000/comments", {
+    fetch("http://localhost:3000/Posts/3/comments", {
       method: "POST",
       body: JSON.stringify(updatedData),
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" }
     })
-      .then((response) => response.json())
-      .then((data) => {
-        setPostData(data);
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("Error:", error);
-      });
+      },[]);
   };
 
-  const handleInputChange = (event) => {
+  const handleInputChange = event => {
     setUpdatedData({
       ...updatedData,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
 
@@ -42,7 +38,6 @@ function Comment({ setPostData }) {
     <div>
       {isEditing ? (
         <>
-          <br /> <br />
           <input
             className="rounded"
             placeholder="user"
@@ -51,7 +46,6 @@ function Comment({ setPostData }) {
             onChange={handleInputChange}
             style={{ width: "100px" }}
           />
-          <br />
           <textarea
             className="mt-1 rounded"
             placeholder="Comment"
@@ -60,12 +54,9 @@ function Comment({ setPostData }) {
             onChange={handleInputChange}
             style={{ width: "100px", height: "30px" }}
           />
-          <br />
-          <br />
           <button className="mt-1" onClick={handleSaveClick}>
             Save
           </button>
-          <br />
         </>
       ) : (
         <button

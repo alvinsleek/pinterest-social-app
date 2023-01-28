@@ -21,7 +21,7 @@ const CreatePostForm = ({setPostData}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     e.target.reset()
-    fetch('http://localhost:3000/Posts', {
+    fetch('https://my-server-sibuor.herokuapp.com/Posts', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: { 'Content-type': 'application/json' },
@@ -34,7 +34,7 @@ const CreatePostForm = ({setPostData}) => {
   };
   
   const fetchData = () => {
-    fetch('http://localhost:3000/Posts')
+    fetch('https://my-server-sibuor.herokuapp.com/Posts')
       .then((res) => res.json())
       .then((data) => {
         setPostData(data);

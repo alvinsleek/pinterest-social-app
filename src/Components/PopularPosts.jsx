@@ -6,7 +6,7 @@ function PopularPosts({ postData }) {
   const postsPerPage = 3;
 
   useEffect(() => {
-    fetch(`http://localhost:3000/Posts`)
+    fetch(`https://my-server-sibuor.herokuapp.com/Posts`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, [postData]);
