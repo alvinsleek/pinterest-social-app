@@ -2,27 +2,23 @@ import React, { useState, useEffect } from "react";
 import Comment from "./Comment";
 import EditPost from "./EditPost";
 
-const PostCard = ({ post, onDelete, setPostData }) => {
+const PostCard = ({ post, onDelete, setPostData,onEdit }) => {
   const [likeCount, setLikeCount] = useState();
   const [viewingComments, setviewingComments] = useState(false);
   const [comment, setComment] = useState([]);
 
-
-
-  useEffect(()=>{
+  useEffect(() => {
     fetch(`http://localhost:3000/comments/${post.id}`)
-    .then(r=>r.json())
-    .then((data)=>setComment(data))
-
-  },[post.id])
+      .then((r) => r.json())
+      .then((data) => setComment(data));
+  }, [post.id]);
 
   const handleViewClick = () => {
     setviewingComments(true);
 
     fetch(`http://localhost:3000/comments/${post.id}`)
       .then((response) => response.json())
-      .then((data) => setComment(data)
-      )
+      .then((data) => setComment(data))
       .catch((error) => console.error(error));
   };
   const handleSaveClick = () => {
@@ -30,7 +26,7 @@ const PostCard = ({ post, onDelete, setPostData }) => {
   };
 
   useEffect(() => {
-    fetch(`https://my-server-sibuor.herokuapp.com/likes/${post.id}`)
+    fetch(`http://localhost:3000/likes/${post.id}`)
       .then((res) => res.json())
       .then(({ likeCount }) => setLikeCount(likeCount));
   }, [post.id]);
@@ -38,12 +34,12 @@ const PostCard = ({ post, onDelete, setPostData }) => {
   const handleClick = async (postId) => {
     try {
       const response = await fetch(
-        `https://my-server-sibuor.herokuapp.com/likes/${postId}`
+        `http://localhost:3000/likes/${postId}`
       );
       const { likeCount } = await response.json();
       const updatedLikeCount = likeCount + 1;
       setLikeCount(updatedLikeCount);
-      await fetch(`https://my-server-sibuor.herokuapp.com/likes/${postId}`, {
+      await fetch(`http://localhost:3000/likes/${postId}`, {
         method: "PATCH",
         body: JSON.stringify({ likeCount: updatedLikeCount }),
         headers: { "Content-Type": "application/json" },
@@ -102,10 +98,14 @@ const PostCard = ({ post, onDelete, setPostData }) => {
               {likeCount} {likeCount === 1 ? "Like" : ""}
             </button>
             <div className="col-3">
-              <EditPost post={post} setPostData={setPostData} />
+              <EditPost post={post} setPostData={setPostData} onEdit={onEdit} />
             </div>
             <div className="col-3 mx-3">
-              <Comment post={post} setPostData={setPostData} />
+              <Comment
+                post={post}
+                setPostData={setPostData}
+                setComment={setComment}
+              />
             </div>
             <a
               onClick={() => handleDelete(post.id)}
@@ -120,14 +120,13 @@ const PostCard = ({ post, onDelete, setPostData }) => {
               {viewingComments ? (
                 <>
                   <br />
-                  
-                    <>
+
+                  <>
                     <div className="card-group">
                       <h5>{comment.name}:</h5>
                       <p>{comment.content}</p>
-                      </div>
-                    </>
-                  
+                    </div>
+                  </>
 
                   <button onClick={handleSaveClick}>Close</button>
                   <br />
@@ -141,6 +140,10 @@ const PostCard = ({ post, onDelete, setPostData }) => {
                   view comments
                 </button>
               )}
+            </div>
+            <div className="card-group">
+              <p className="fst-italic">time posted:</p>
+              <p className="fst-italic"> {post.created_at}</p>
             </div>
           </div>
         </div>

@@ -27,6 +27,11 @@ function PostList({ postData, setPostData }) {
     setFilteredData((postData || []).filter((post) => post.id !== id));
   };
 
+  const handleEdit =() =>{
+
+    setPostData(postData)
+  }
+
   return (
     <>
       <PopularPosts postData={postData} />
@@ -35,7 +40,7 @@ function PostList({ postData, setPostData }) {
         <h2 className="bg-dark text-white">Your Feed</h2>
         <div className="row mx-2 my-2">
           {(filteredData || []).map((post) => (
-            <PostCard key={post.id} post={post} onDelete={handleDeleteFunc} setPostData={setPostData} />
+            <PostCard key={post.id} post={post} onDelete={handleDeleteFunc} setPostData={setPostData} onEdit={handleEdit}/>
           ))}
         </div>
       </div>

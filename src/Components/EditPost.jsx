@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function EditPost() {
+function EditPost({ post }) {
   const [isEditing, setIsEditing] = useState(false);
   const [data, setData] = useState({});
 
@@ -11,7 +11,7 @@ function EditPost() {
   const handleSaveClick = async () => {
     setIsEditing(false);
     try {
-      const response = await fetch('https://my-server-sibuor.herokuapp.com/Posts', {
+      const response = await fetch(`http://localhost:3000/posts/${post.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -28,6 +28,7 @@ function EditPost() {
     } catch (err) {
       console.error(err);
     }
+    
   };
 
   return (
@@ -40,7 +41,7 @@ function EditPost() {
             placeholder="new caption"
             type="text"
             name="description"
-            onChange={(e) => setData({ ...data, name: e.target.value })}
+            onChange={(e) => setData({ ...data, description: e.target.value })}
             style={{ width: "200px", height: "30px" }}
           />
 

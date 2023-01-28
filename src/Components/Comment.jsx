@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Comment({post }) {
+function Comment({post,setComment }) {
   const [isEditing, setIsEditing] = useState(false);
   const [updatedData, setUpdatedData] = useState({
     name: "",
@@ -13,7 +13,7 @@ function Comment({post }) {
 
   const handleSaveClick = () => {
     setIsEditing(false);
-    fetch("http://localhost:3000/Posts/3/comments", {
+    fetch("http://localhost:3000/comments", {
       method: "POST",
       body: JSON.stringify(updatedData),
       headers: { "Content-Type": "application/json" }

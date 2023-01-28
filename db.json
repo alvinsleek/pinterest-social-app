@@ -5,56 +5,56 @@
       "name": "Ken",
       "image": "https://images.unsplash.com/photo-1625223181444-128aab274266?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "description": "gang gang gang",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "5:30"
     },
     {
       "id": 4,
       "name": "Howard",
       "image": "https://images.unsplash.com/photo-1674505613923-98085d3712fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "description": "Coding my way to my first million",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "4:08"
     },
     {
       "id": 5,
       "name": "sophia",
       "image": "https://images.unsplash.com/photo-1673906003762-9a5f529bfcbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "description": "leo ni kutesa",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "9:30"
     },
     {
       "id": 6,
       "name": "Evelyn",
       "image": "https://images.unsplash.com/photo-1671515618316-caa41f73c134?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "description": "Niokotweeeee",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "8:30"
     },
     {
       "id": 7,
       "name": "Randy",
       "image": "https://images.unsplash.com/photo-1674515625118-a7d9eb5c167a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
       "description": "Rich Gang",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "7:30"
     },
     {
       "id": 8,
       "name": "Howard",
       "image": "https://images.unsplash.com/photo-1674479897333-e181b41b23e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Born blessed",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "12:32"
     },
     {
       "id": 9,
       "name": "Keith",
       "image": "https://images.unsplash.com/photo-1612412008219-c5540c884708?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fEpwZzZLaWRsLUhrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "description": "An apple a day...",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "12:30"
     },
     {
       "id": 10,
       "name": "Kuria",
       "image": "https://hwmiia.fra1.digitaloceanspaces.com/wp-content/uploads/2015/11/06130023/SolarNow-600x300.jpg",
       "description": "We are back!",
-      "created_at": "2022-01-01T00:00:00.000Z"
+      "created_at": "11.22"
     },
     {
       "name": "jamna",
@@ -96,9 +96,10 @@
     {
       "name": "Dante",
       "image": "https://images.unsplash.com/photo-1674566394357-44c0ded098e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "description": "credit from Moringa",
+      "description": "please work",
       "created_at": "",
-      "id": 22
+      "id": 22,
+      "caption": "change bana"
     },
     {
       "name": "PAULOMOSH",
@@ -106,190 +107,366 @@
       "description": "credit from Moringa",
       "created_at": "",
       "id": 23
+    },
+    {
+      "name": "kaleidoscope",
+      "image": "https://plus.unsplash.com/premium_photo-1674512268367-715dfc2f6611?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80",
+      "description": "credit from Moringa",
+      "created_at": "16:23",
+      "id": 24
+    },
+    {
+      "name": "Icecream",
+      "image": "https://images.unsplash.com/photo-1674848494301-c635a548e636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "Alcohol",
+      "created_at": "16:40",
+      "id": 25
+    },
+    {
+      "name": "you people",
+      "image": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "ipo siku",
+      "created_at": "17:12",
+      "id": 26
+    },
+    {
+      "name": "you people",
+      "image": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "description": "edit test",
+      "created_at": "17:14",
+      "id": 27
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "postId":1,
+      "id": 25,
+      "postId": 25,
       "name": "Omosh",
       "content": "Great post!"
     },
     {
-      "id": 2,
-      "postId":2,
+      "id": 24,
+      "postId": 2,
       "name": "Alvin",
       "content": "Great post!"
     },
     {
-      "id": 3,
+      "id": 21,
       "postId": 3,
       "name": "ken",
       "content": "Great post!"
     },
     {
-      "id": 4,
-      "postId":4,
+      "id": 22,
+      "postId": 5,
       "name": "Howard",
       "content": "Great post!"
     },
     {
       "id": 5,
-      "postId":5,
+      "postId": 5,
       "name": "sophia",
       "content": "Great post!"
     },
     {
-      "id": 6,
-      "postId":6,
+      "id": 24,
+      "postId": 6,
       "name": "Randy",
       "content": "Great post!"
     },
     {
       "name": "PAULOMOSH",
       "content": "km\nknkijj'piojoikmkm",
-      "id": 7
+      "id": 14
     },
     {
       "name": "PAULOMOSH",
       "content": "kmeokoepke",
-      "id": 8,
-      "postId":14
-    },
-    {
-      "name": "",
-      "content": "",
-      "id": 9,
-      "postId":20
-    },
-    {
-      "name": "",
-      "content": "",
-      "id": 10,
-      "postId":15
+      "id": 8
     },
     {
       "name": "PAULOMOSH",
-      "content": "Love it!",
-      "id": 11,
-      "postId":21
+      "content": "hawayu",
+      "id": 9
     },
     {
-      "name": "",
-      "content": "",
-      "id": 12
+      "name": "PAULOMOSH",
+      "content": "baya",
+      "id": 25
     },
     {
-      "name": "",
-      "content": "",
-      "id": 13
+      "name": "PAULOMOSH",
+      "content": "baya",
+      "id": 21
+    },
+    {
+      "name": "Icecream",
+      "content": "somea\n",
+      "id": 20
+    },
+    {
+      "id": 25,
+      "postId": 25,
+      "name": "Omosh",
+      "content": "Great post!"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "name": "Alvin",
+      "content": "Great!"
+    },
+    {
+      "id": 4,
+      "postId": 3,
+      "name": "ken",
+      "content": "Looking good!"
+    },
+    {
+      "id": 6,
+      "postId": 5,
+      "name": "Howard",
+      "content": "must be nice!"
+    },
+    {
+      "id": 7,
+      "postId": 5,
+      "name": "sophia",
+      "content": "Great post!"
+    },
+    {
+      "id": 10,
+      "postId": 6,
+      "name": "Randy",
+      "content": "Great post!"
+    },
+    {
+      "id": 15,
+      "postId": 6,
+      "name": "Randy",
+      "content": "Great post!"
     }
   ],
   "likes": [
     {
-      "id": 1,
-      "postId": 1,
-      "likeCount": 651
+      "id": 23,
+      "likeCount": 662
     },
     {
-      "id": 2,
-      "postId": 2,
+      "id": 22,
       "likeCount": 203
     },
     {
       "id": 3,
-      "postId": 3,
-      "likeCount": 119
+      "likeCount": 124
     },
     {
       "id": 4,
-      "postId": 4,
       "likeCount": 154
     },
     {
       "id": 5,
-      "postId": 5,
       "likeCount": 183
     },
     {
       "id": 6,
-      "postId": 6,
       "likeCount": 95
     },
     {
       "id": 7,
-      "postId": 7,
       "likeCount": 149
     },
     {
       "id": 8,
-      "postId": 8,
       "likeCount": 79
     },
     {
       "id": 9,
-      "postId": 9,
       "likeCount": 34
     },
     {
       "id": 10,
-      "postId": 10,
       "likeCount": 16
     },
     {
       "id": 11,
-      "postId": 11,
       "likeCount": 10
     },
     {
       "id": 12,
-      "postId": 12,
       "likeCount": 2
     },
     {
       "id": 13,
-      "postId": 13,
       "likeCount": 16
     },
     {
       "id": 14,
-      "postId": 14,
       "likeCount": 10
     },
     {
       "id": 15,
-      "postId": 15,
       "likeCount": 32
     },
     {
       "id": 16,
-      "postId": 16,
       "likeCount": 16
     },
     {
       "id": 17,
-      "postId": 17,
       "likeCount": 10
     },
     {
-      "id": 18,
-      "postId": 18,
-      "likeCount": 2
+      "id": 21,
+      "likeCount": 7
     },
     {
       "id": 19,
-      "postId": 19,
       "likeCount": 16
     },
     {
       "id": 20,
-      "postId": 20,
       "likeCount": 24
     },
     {
-      "id": 21,
-      "postId": 21,
-      "likeCount": 113
+      "id": 24,
+      "likeCount": 119
+    },
+    {
+      "id": 25,
+      "likeCount": 33
+    },
+    {
+      "id": 26,
+      "likeCount": 23
+    },
+    {
+      "id": 27,
+      "likeCount": 15
+    },
+    {
+      "id": 28,
+      "likeCount": 0
+    },
+    {
+      "id": 29,
+      "likeCount": 0
+    },
+    {
+      "id": 30,
+      "likeCount": 0
+    },
+    {
+      "id": 32,
+      "likeCount": 0
+    },
+    {
+      "id": 33,
+      "likeCount": 0
+    },
+    {
+      "id": 34,
+      "likeCount": 0
+    },
+    {
+      "id": 35,
+      "likeCount": 0
+    },
+    {
+      "id": 36,
+      "likeCount": 0
+    },
+    {
+      "id": 37,
+      "likeCount": 0
+    },
+    {
+      "id": 38,
+      "likeCount": 0
+    },
+    {
+      "id": 39,
+      "likeCount": 0
+    },
+    {
+      "id": 40,
+      "likeCount": 0
+    },
+    {
+      "id": 41,
+      "likeCount": 0
+    },
+    {
+      "id": 42,
+      "likeCount": 0
+    },
+    {
+      "id": 43,
+      "likeCount": 0
+    },
+    {
+      "id": 44,
+      "likeCount": 0
+    },
+    {
+      "id": 45,
+      "likeCount": 0
+    },
+    {
+      "id": 46,
+      "likeCount": 0
+    },
+    {
+      "id": 47,
+      "likeCount": 0
+    },
+    {
+      "id": 48,
+      "likeCount": 0
+    },
+    {
+      "id": 49,
+      "likeCount": 0
+    },
+    {
+      "id": 50,
+      "likeCount": 0
+    },
+    {
+      "id": 51,
+      "likeCount": 0
+    },
+    {
+      "id": 52,
+      "likeCount": 0
+    },
+    {
+      "id": 53,
+      "likeCount": 0
+    },
+    {
+      "id": 54,
+      "likeCount": 0
+    },
+    {
+      "id": 55,
+      "likeCount": 0
+    },
+    {
+      "id": 56,
+      "likeCount": 0
+    },
+    {
+      "id": 57,
+      "likeCount": 0
+    },
+    {
+      "id": 59,
+      "likeCount": 0
+    },
+    {
+      "id": 60,
+      "likeCount": 0
     }
   ]
 }
