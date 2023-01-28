@@ -42,6 +42,7 @@ const CreatePostForm = ({ setPostData }) => {
   };
 
   return (
+    <div className="col-sm-4 col-md-6 col-lg-12">
     <div className="bg-dark">
       <form className="mt-3 mx-2  post-form" onSubmit={handleSubmit}>
         <div
@@ -92,6 +93,7 @@ const CreatePostForm = ({ setPostData }) => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };
