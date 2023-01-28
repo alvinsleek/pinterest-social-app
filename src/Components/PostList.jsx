@@ -7,6 +7,8 @@ function PostList({ postData, setPostData }) {
   const [search, setSearch] = useState("");
   const [filteredData, setFilteredData] = useState(postData);
 
+  
+
   useEffect(() => {
     if (!Array.isArray(postData)) {
       return;
@@ -37,7 +39,9 @@ function PostList({ postData, setPostData }) {
       <div className="">
         <h2 className="bg-dark text-white">Your Feed</h2>
         <div className="row mx-2 my-2">
-          {(filteredData || []).map((post) => (
+          {(filteredData || [])
+          .reverse()
+          .map((post) => (
             <PostCard
               key={post.id}
               post={post}
